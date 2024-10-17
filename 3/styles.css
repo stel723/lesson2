@@ -1,0 +1,14 @@
+.menu {
+    background-color:honeydew;
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: #7D0057;
+    font-size: 30px;
+}
