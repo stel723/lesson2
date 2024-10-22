@@ -2,14 +2,17 @@ body {
     background-color: beige;
 }
 
-ul li {
+ol li {
     list-style-type: none;
     padding: 10px;
     margin: 5px 0;
 }
 
-ul li img {
+ol li img {
     width: 50px;
     height: auto;
     margin-right: 10px;
+}
+ol {
+    list-style-type:none
 }
