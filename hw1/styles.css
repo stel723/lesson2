@@ -1,16 +1,39 @@
 body {
-    background-color: rgb(158, 158, 158);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    background-color: rgb(255, 148, 148);
-    width: 300px;
-    margin: 50px auto;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .custom-list li {
     background-color: rgb(255, 203, 203);
     margin: 10px 0;
     border-radius: 5px;
+}
+.container{
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.custom-list {
+    background: linear-gradient(to bottom, #ff9f9f, #ff6666);
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #fca084;
+}
+.fruit-item {
+    background-color: #ff6f6f;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.fruit-item:hover {
+    background-color: #66b3ff;
+}
+.highlight {
+    background-color: rgb(240, 110, 110);
 }
