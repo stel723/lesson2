@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #232c34;
+}
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background: white;
+    transform-origin: bottom;
+}
+.hour-hand{
+    height: 50px;
+    width: 4px;
+    animation: rotateHour 12s linear infinite;
+}
+.minute-hand{
+    height: 70px;
+    width: 4px;
+    animation: rotateMinute 60s linear infinite;
+}
+.second-hand{
+    height: 90px;
+    width: 2px;
+    background: red;
+    animation: rotateSecond 60s linear infinite;
+}
+@keyframes rotateHour{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
