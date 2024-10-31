@@ -3,13 +3,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #232c34;
+    background-color: #79c0fd;
+    background-image: url("C:\Users\Test\Desktop\кот.jfif");
 }
 .clock{
     position: relative;
     width: 200px;
     height: 200px;
-    border: 10px solid white;
+    border: 10px solid rgb(0, 0, 0);
     border-radius: 50%;
 }
 .hand{
@@ -22,11 +23,13 @@ body{
 .hour-hand{
     height: 50px;
     width: 4px;
+    background: #e6b54e;
     animation: rotateHour 12s linear infinite;
 }
 .minute-hand{
     height: 70px;
     width: 4px;
+    background: #41004e;
     animation: rotateMinute 60s linear infinite;
 }
 .second-hand{
@@ -36,6 +39,22 @@ body{
     animation: rotateSecond 60s linear infinite;
 }
 @keyframes rotateHour{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateMinute{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateSecond{
     from{
         transform: rotate(0deg);
     }
