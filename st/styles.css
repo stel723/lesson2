@@ -4,7 +4,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #79c0fd;
-    background-image: url("кот.webp");
+    background-image: url("cat.webp");
 }
 .clock{
     position: relative;
