@@ -4,7 +4,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #79c0fd;
-    background-image: url("C:\Users\Test\Desktop\кот.jfif");
+    background-image: url("кот.webp");
 }
 .clock{
     position: relative;
@@ -23,13 +23,13 @@ body{
 .hour-hand{
     height: 50px;
     width: 4px;
-    background: #e6b54e;
+    background: #000000;
     animation: rotateHour 12s linear infinite;
 }
 .minute-hand{
     height: 70px;
     width: 4px;
-    background: #41004e;
+    background: #000000;
     animation: rotateMinute 60s linear infinite;
 }
 .second-hand{
