@@ -5,3 +5,8 @@ uikit-3.21.12
 *.jpg
 *.jpeg
 *.hintrc
+
+#environment
+mode_modules
+package-lock.json
+package.json
