@@ -99,17 +99,25 @@
 // }
 // console.log('Минимальное из трёх чисел:'+ min);
 
-const prompt = require('prompt-sync')();
-let number1 = Number(prompt('Введите первое число:'));
-let number2 = Number(prompt('Введите второе число:'));
-let number3 = Number(prompt('Введите третье число:'));
-let max;
-let min;
-if(number1<number2 && number1 < number3){
-    min = number1
-} else if (number2<number1 && number2 < number3){
-    min = number2
-}else{
-    min = number3
-}
-console.log('Минимальное из трёх чисел:'+ min);
+// const prompt = require('prompt-sync')();
+// let number1 = Number(prompt('Введите первое число:'));
+// let number2 = Number(prompt('Введите второе число:'));
+// let number3 = Number(prompt('Введите третье число:'));
+// let max;
+// let min;
+// if(number1<number2 && number1 < number3){
+//     min = number1
+// } else if (number2<number1 && number2 < number3){
+//     min = number2
+// }else{
+//     min = number3
+// }
+// console.log('Минимальное из трёх чисел:'+ min);
+
+// Задача 10: Периметр прямоугольника
+
+// const prompt = require('prompt-sync')();
+// let number1 = Number(prompt('Введите первое число:'));
+// let number2 = Number(prompt('Введите второе число:'));
+// let per = 2 * (number1 + number2);
+// console.log("Периметр прямоугольника:", + per);
