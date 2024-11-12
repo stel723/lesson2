@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #4c7faf;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -40,7 +40,7 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #4c5eaf;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -66,8 +66,9 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-image: url('background.jpg'); /* Замените 'background.jpg' на ваш путь к изображению */
+    background-image: url('background.jpg'); 
     background-size: cover;
+    
 }
 
 th, td {
@@ -77,16 +78,16 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50; /* Цвет фона заголовков */
-    color: white; /* Цвет текста заголовков */
+    background-color: #426fec; 
+    color: white; 
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Цвет фона четных строк */
+    background-color: #f2f2f2; 
 }
 
 tr:hover {
-    background-color: #ddd; /* Цвет фона строки при наведении */
+    background-color: #ddd; 
 }
 
 @media (max-width: 600px) {
