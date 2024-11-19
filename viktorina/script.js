@@ -21,3 +21,19 @@ const questions = [
 let currentQuestion = 0;
 let score = 0;
 
+const questionText = document.getElementById("question");
+const optionButtons = document.querySelectorAll(".options button");
+const nextButton = document.getElementById("next-button");
+
+function startQuiz(){
+    questionText.innerText = questions[currentQuestion].question;
+
+    const questionImage = document.getElementById("question-image");
+    questionImage.src = questions[currentQuestion].image;
+    questionImage.style.display = "block";
+
+    optionButtons.forEach((button, index) =>{
+        button.innerText = questions[currentQuestion].options[index];
+        button.addEventListener("click",() => checkAnswer(index));
+    })
+}
