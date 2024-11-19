@@ -37,3 +37,24 @@ function startQuiz(){
         button.addEventListener("click",() => checkAnswer(index));
     })
 }
+
+function checkAnswer(selectedIndex){
+    if (selectedIndex === questions[currentQuestion].correctAnswer){
+        score++;
+    }
+    currentQuestion++;
+    if(currentQuestion<questions.length){
+        questionText.innerText = questions[currentQuestion].question;
+
+        const questionImage = document.getElementById("question-image");
+        questionImage.src = questions[currentQuestion].image;
+        questionImage.style.display = "block";
+
+        optionButtons.forEach((button, index)=>{
+            button.innerText = questions[currentQuestion].options[index];
+        });
+    } else{
+        finishQuiz();
+    }
+}
+
