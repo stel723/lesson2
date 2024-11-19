@@ -58,3 +58,6 @@ function checkAnswer(selectedIndex){
     }
 }
 
+function finishQuiz(){
+    questionText.innerText = 'Вы ответили правильно на ${score} из ${questions.lenght} вопросов';
+}
