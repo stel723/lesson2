@@ -1,110 +1,57 @@
-/* Общие стили для контейнера */
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #80c9df;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Стили для заголовка */
-h1 {
-    text-align: center;
-}
-
-/* Стили для формы */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Стили для fieldset */
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-legend {
-    font-weight: bold;
-}
-
-/* Стили для label */
-label {
-    margin-bottom: 5px;
-}
-
-/* Стили для input и select */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-/* Стили для кнопки */
-button {
-    background-color: #4CAF50; /* Зеленая кнопка */
+header {
+    background-color: #4c87af;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    padding: 1em 0;
 }
 
-button:hover {
-    background-color: #45a049; /* При наведении */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1; /* Колонки будут одинаковой ширины */
+    margin: 0 10px; /* Отступ между колонками */
+    background-color: #f4f4f4; /* Цвет фона для колонок */
+    padding: 20px; /* Внутренний отступ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для колонок */
+}
+
+.column:first-child {
+    margin-left: 0; /* Убираем отступ слева для первой колонки */
+}
+
+.column:last-child {
+    margin-right: 0; /* Убираем отступ справа для последней колонки */
+}
+
+article {
+    margin-bottom: 20px; /* Отступ между статьями */
+    padding: 15px; /* Внутренний отступ для статей */
+    background-color: #ffffff; /* Цвет фона для статей */
+    border-radius: 5px; /* Скругление углов */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Тень для статей */
+}
+
+h3 {
+    margin-top: 0; /* Убираем верхний отступ у заголовков статей */
 }
 
 /* Адаптивность */
-@media (max-width: 1024px) {
-    .container {
-        padding: 15px; /* Уменьшение отступов на больших экранах */
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"],
-    select,
-    button {
-        font-size: 16px; /* Увеличение шрифта на больших экранах */
-    }
-}
-
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Уменьшение отступов на средних экранах */
+        flex-direction: column; /* На узких экранах колонки становятся вертикальными */
     }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"],
-    select,
-    button {
-        font-size: 15px; /* Уменьшение шрифта на средних экранах */
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 10px; /* Уменьшение отступов на маленьких экранах */
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"],
-    select,
-    button {
-        font-size: 14px; /* Уменьшение шрифта на маленьких экранах */
+    
+    .column {
+        margin: 10px 0; /* Отступы для вертикального расположения */
     }
 }
