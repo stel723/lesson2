@@ -1,6 +1,13 @@
 .menu {
-    background-color: #3ecdf8;
+    background-color: #4c87af;
     padding: 20px;
+}
+
+header {
+    background-color: #4c87af;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
 }
 
 ul {
@@ -11,6 +18,6 @@ ul {
 ul li {
     display: inline-block;
     margin: 0 15px;
-    color: #7D0057;
+    color: #ebebeb;
     font-size: 30px;
 }
