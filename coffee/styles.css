@@ -2,10 +2,12 @@
     background-color: #4c87af;
     padding: 20px;
 }
-
+body{
+    background-color: #f8d1b0;
+}
 header {
     background-color: #4c87af;
-    color: white;
+    color: #f8f6f5;
     text-align: center;
     padding: 1em 0;
 }
