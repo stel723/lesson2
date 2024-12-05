@@ -16,11 +16,11 @@ header {
     justify-content: space-between;
     padding: 20px;
 }
-/* .ava {
-    width: 160px; /* Ширина  */
-    /* height: 150px; /* Высота  */
-    /* margin-right: 10px;  */
-/* } */ 
+.ava {
+    width: 300px; /* Ширина  */
+    height: 200px; /* Высота  */
+    margin-right: 10px;
+ } 
 .column {
     flex: 1; /* Колонки будут одинаковой ширины */
     margin: 0 10px; /* Отступ между колонками */
@@ -59,7 +59,3 @@ h3 {
         margin: 10px 0; /* Отступы для вертикального расположения */
     }
 }
-/* .img{
-    width: 300px; 
-    height: 200px;
-} */
