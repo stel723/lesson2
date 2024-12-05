@@ -22,7 +22,7 @@ ul li {
     font-size: 30px;
 }
 .container {
-    width: 800px;
+    width: 2000px;
     height: 400px;
     position: relative;
     overflow: hidden;
@@ -39,7 +39,7 @@ ul li {
 .door {
     width: 50%;
     height: 100%;
-    background-color: #4134f7;
+    background-color: #2569a0;
     position: relative;
     transition: transform 2s ease, width 2s ease; 
 }
