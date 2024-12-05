@@ -3,14 +3,12 @@ body {
     margin: 0;
     padding: 0;
 }
-/* 
 header {
     background-color: #4c87af;
-    color: white;
+    color: #f8f6f5;
     text-align: center;
     padding: 1em 0;
-} */
-
+}
 .container {
     display: flex;
     justify-content: space-between;
